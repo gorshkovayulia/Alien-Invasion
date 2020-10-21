@@ -5,13 +5,13 @@ from ship import Ship
 import game_functions as gf
 
 def run_game():
-    """Initiates a game and creates screen object."""
+    """Initialize game and create a screen object."""
     pygame.init()
     ai_settings = Settings()
     screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("Alien Invasion")
 
-    # Creating a ship.
+    # Make a ship.
     ship = Ship(ai_settings, screen)
 
     #Start the main loop for the game.
